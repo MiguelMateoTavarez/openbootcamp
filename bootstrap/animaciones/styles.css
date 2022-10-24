@@ -1,0 +1,15 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hija {
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+}
+
+.padre:hover .hija {
+    transform: translateX(100%);
+}

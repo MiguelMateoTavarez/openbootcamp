@@ -1,0 +1,40 @@
+.padre {
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.hija {
+    width: 50%;
+    height: 50%;
+    background-color: beige;
+    /* transition: transform 2s;  action - velocity of execution - effect - delay*/
+    animation: traslation 5s infinite forwards alternate;
+}
+
+.padre:hover .hija {
+    /* Animation name - duration from start to end, behaviour */
+    /* transform: translateX(100%);
+    background-color: blueviolet; */
+    animation-play-state: paused;
+}
+
+@keyframes traslation {
+    0% {
+        background-color: beige;
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(100%);
+    }
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+    75% {
+        transform: translateX(0%) translateY(100%);
+    }
+    100% {
+        background-color: red;
+        transform: translateY(0%);
+    }
+}

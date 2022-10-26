@@ -1,0 +1,33 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-modern {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.btn-modern:hover {
+    animation: movie 400ms forwards ;
+}
+
+@keyframes movie {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateY(-5px);
+        box-shadow: 3px 11px 23px 1px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 3px 11px 23px 1px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 3px 11px 23px 1px rgba(0, 0, 0, 0.33);
+        background-color: brown;
+        color: yellow;
+    }
+}

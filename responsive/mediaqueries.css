@@ -43,6 +43,11 @@ p {
     }
 }
 
+/* 
+Movil orientation:
+        portrait
+        landscape
+*/
 @media (orientation: landscape) {
     p {
         color: brown;

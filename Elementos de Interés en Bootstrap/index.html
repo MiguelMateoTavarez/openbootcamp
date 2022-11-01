@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <title>Elementos de Interés en Bootstrap</title>
+</head>
+
+<body>
+    <article class="container p-5">
+        <section>
+            <div class="p-5 mb-4 bg-dark text-white rounded-3">
+                <div class="container py-5">
+                    <h1 class="display-5 fw-bold">
+                        My Jumbotron
+                    </h1>
+                    <p class="col-md-5 fs-4">
+                        Using a series of utilities, you can create this jumbotron, just like the one in previous
+                        versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your
+                        liking.
+                    </p>
+                    <button 
+                        class="btn btn-primary btn-lg" 
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#myModal">
+                        Show modal
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                                Greetings
+                            </h5>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Hello, it's a pleasure to meet you</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button 
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal">
+                                Close
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <form action="#">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Nombre</label>
+                    <input class="form-control" id="name" placeholder="Nombre..." type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="number">Número</label>
+                    <input class="form-control" id="number" placeholder="Número..." type="number">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="message">Mensaje</label>
+                    <textarea  class="form-control"
+                        name="message" 
+                        id="message" 
+                        cols="30" 
+                        rows="10">
+                    </textarea>                    
+                </div>
+            </form>
+        </section>
+        <section>
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Miguel Angel Mateo Tavarez</h1>
+                    <p class="card-text">
+                        Soy desarrollador web backend y estoy aprendiendo sobre el frontend
+                    </p>
+                </div>
+                <div class="card-footer">
+                    miguelmateot94@gmail.com
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
+</body>
+
+</html>

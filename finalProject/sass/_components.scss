@@ -48,6 +48,7 @@ $main-color: #0075FF;
         font-size: .75rem;
         list-style: none;
         display: inline;
+        margin-right: 1rem;
         a {
             color: #000;
             text-decoration: none;
@@ -61,8 +62,8 @@ $main-color: #0075FF;
 
 .icon-sm {
     i {
-        font-size: .75rem;
-        padding: .1rem .25rem;
+        font-size: 1.25rem;
+        padding: .4rem .65rem;
         border-radius: 50%;
         color: $main-color;
         box-shadow: 0 0 10px #00000050;

@@ -70,12 +70,12 @@ $main-color: #0075FF;
     }
 }
 
-.feature {
+.benefit {
     display: flex;
     flex-direction: column;
-    .icon {
+    i {
         color: $main-color;
-        font-size: 10rem;
+        font-size: 7.5rem;
         text-align: center;
     }
     .description {

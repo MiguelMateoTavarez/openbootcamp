@@ -21,19 +21,22 @@ body {
     border-bottom: solid 1px #ddd;
 }
 
-.logo a img{
+.logo a img {
     max-width: 7rem;
-} 
+}
 
 .sec-home {
     display: flex;
     align-items: center;
     @include section-display();
+
     .home-cta {
         flex: 1;
+
         .cta-text {
             color: components.$main-color;
         }
+
         .home-title {
             width: 20rem;
             font-size: 3rem;
@@ -43,33 +46,42 @@ body {
 
 .sec-features {
     @include section-display();
+
     .intro {
         text-align: center;
+
         h3 {
             font-size: 1.8rem;
         }
+
         p {
             font-size: 0.8rem;
             color: #888;
         }
     }
+
     .features {
         display: flex;
         gap: 1rem;
         align-items: center;
+
         .text {
             padding: 2rem 0;
             flex: 1;
+
             .feature {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+
                 .description {
                     margin-left: 1rem;
                     max-width: 20rem;
+
                     .description-title {
                         font-size: 1.15rem;
                     }
+
                     .description-text {
                         font-size: 1rem;
 
@@ -77,6 +89,7 @@ body {
                 }
             }
         }
+
         .image {
             img {
                 max-width: 20rem;
@@ -93,5 +106,43 @@ body {
     .benefit-cards {
         width: 100%;
         padding: 0 2rem 2rem 2rem;
+    }
+}
+
+.sec-kpis {
+    width: 100%;
+    background-color: components.$main-color;
+    color: white;
+    padding: 4rem;
+
+    .kpi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .number {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+
+        .desc {
+            font-size: 0.9rem;
+            color: #ffffffaa;
+        }
+    }
+}
+
+.sec-onboarding {
+    @extend .sec-features, .intro;
+    .steps {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .step-separator {
+            flex: 1;
+            border-top: 2px solid #ddd;
+            margin: 0 1rem;
+        }
     }
 }

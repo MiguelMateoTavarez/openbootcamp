@@ -215,4 +215,22 @@ body {
   margin: 0 1rem;
 }
 
+.sec-footer-cta {
+  background-color: #f4f8fe;
+  padding: 5rem;
+  background-image: url("../assets/img/astronaut.webp");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 500px 280px;
+}
+.sec-footer-cta .footer-cta {
+  width: 50%;
+}
+.sec-footer-cta .footer-cta .cta-title {
+  font-size: 2rem;
+}
+.sec-footer-cta .footer-cta .cta-description {
+  font-size: 1.1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
